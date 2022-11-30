@@ -1,0 +1,90 @@
+footer {
+  background-color: $graphite;
+  padding: $spacing-96 $spacing-24 $spacing-32;
+  @media (min-width: $large){
+    padding: $spacing-136 $spacing-88 $spacing-32;
+  }
+  .footer-title {
+    margin-bottom: $spacing-40;
+  }
+  .content-container {
+    @media (min-width: $large) {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .new-business-container {
+      margin-bottom: $spacing-40;
+      @media (min-width: $large) {
+        margin-bottom: 0;
+      }
+      .title {
+
+      }
+      .email {
+
+      }
+      .phone {
+
+      }
+    }
+    .address-container {
+      margin-bottom: $spacing-40;
+      @media (min-width: $large) {
+        margin-bottom: 0;
+      }
+      .title {
+        
+      }
+      .address-1 {
+
+      }
+      .address-2 {
+
+      }
+    }
+    .logo {
+      margin-bottom: $spacing-96;
+      @media (min-width: $large) {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .links {
+    margin-bottom: $spacing-40;
+    @media (min-width: $large) {
+      margin-top: $spacing-240;
+      margin-bottom: 0;
+    }
+    ul {
+      display: flex;
+      padding: 0;
+      li {
+        list-style: none;
+        margin-right: $spacing-16;
+        a {
+
+        }
+      }
+    }
+  }
+  .copyright {
+    @media (min-width: $large) {
+      margin-top: $spacing-240;
+    }
+  }
+}
+
+.footer.mobile {
+  display: block;
+  @media (min-width: $large) {
+    display: none;
+  }
+}
+
+.footer.desktop {
+  display: none;
+  @media (min-width: $large) {
+    display: block;
+  }
+}

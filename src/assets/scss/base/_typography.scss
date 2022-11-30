@@ -1,0 +1,272 @@
+/* ==============================
+	    
+    BASE / typography
+    
+    Base for typographic elements. Should be almost exclusively single element, attribute, psuedo-class, child and sibling selectors.
+    
+============================== */
+
+html {
+    vertical-align: baseline;
+}
+
+
+body, input, textarea, select, button {
+    color: $white;
+    font-family: $base-font-family;
+    font-feature-settings: "kern", "liga", "pnum";
+    font-size: $base-font-size;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: 400;
+  color: $abalone;
+}
+
+//Typography
+p, ul, ol, dt {
+    margin: 0 0 $small-spacing;
+}
+
+ul {
+	padding-left: 1em;
+}
+
+a {
+	color: $white;
+    text-decoration: none;
+    transition: color 0.1s ease-in-out;
+    
+    &:active,
+    &:focus,
+    &:hover {
+        color: darken($white, 15%);
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+hr {
+	border-bottom: 1px solid $white;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	margin: $base-spacing 0;
+}
+
+nav {
+    a {
+        color: inherit;
+    }
+}
+
+select option {
+    font-family: inherit;
+}
+
+address {
+	font-style: normal;
+	font-size: .75rem;
+}
+
+
+
+
+@font-face {
+  font-family: "Fraunces italic";
+  src: url("/fonts/Fraunces-Italic-VariableFont_SOFT,WONK,opsz,wght.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("/fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.otf");
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("/fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.otf");
+  font-display: swap;
+  font-style: italic;
+}
+
+// @mixin paragraph {
+//   font-family: GT America;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: vwMobile(16);
+//   line-height: 150%;
+//   margin: 0;
+
+//   @media (min-width: $desktop) {
+//     font-size: vwDesktop(16);
+//   }
+//   @media (orientation: landscape) and (max-width: $desktop) {
+//     font-size: vwDesktop(16);
+//   }
+// }
+
+// @mixin paragraphAlt {
+//   font-family: Tiempos Fine;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: vwMobile(16);
+//   line-height: 134%;
+//   letter-spacing: 0.01em;
+
+//   @media (min-width: $desktop) {
+//     font-size: vwDesktop(16);
+//   }
+//   @media (orientation: landscape) and (max-width: $desktop) {
+//     font-size: vwDesktop(16);
+//   }
+// }
+
+// @mixin link {
+//   @include paragraph;
+
+//   text-decoration: none;
+//   color: $burgundy;
+//   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+//   -webkit-tap-highlight-color: transparent;
+//   -webkit-user-select: none;
+//   -khtml-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+// }
+
+// @mixin animatedLink {
+//   text-decoration: none;
+//   position: relative;
+//   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+//   -webkit-tap-highlight-color: transparent;
+//   -webkit-user-select: none;
+//   -khtml-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+//   &:after {
+//     content: "";
+//     position: absolute;
+//     width: 100%;
+//     height: 1px;
+//     bottom: 0;
+//     left: 0;
+//     background-color: var(--link-color);
+//   }
+
+//   &:hover:after {
+//     background-color: var(--link-hover-color);
+//     animation-name: underliner;
+//     animation-duration: 700ms;
+//     animation-timing-function: cubic-bezier(1, 0, 0, 1);
+//   }
+// }
+
+// @keyframes underliner {
+//   0% {
+//     transform-origin: bottom right;
+//     transform: scaleX(1);
+//   }
+//   25% {
+//     transform-origin: bottom right;
+//     transform: scaleX(0);
+//   }
+//   50% {
+//     transform-origin: bottom left;
+//     transform: scaleX(0);
+//   }
+//   100% {
+//     transform-origin: bottom left;
+//     transform: scaleX(1);
+//   }
+// }
+
+// @mixin caption {
+//   font-family: GT America;
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: vwMobile(14);
+//   line-height: 130%;
+//   text-transform: uppercase;
+//   font-feature-settings: "liga" off;
+
+//   @media (min-width: $desktop) {
+//     font-size: vwDesktop(14);
+//   }
+//   @media (orientation: landscape) and (max-width: $desktop) {
+//     font-size: vwDesktop(14);
+//   }
+// }
+
+
+// @mixin tag {
+//   font-family: GT America;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: vwMobile(12);
+//   line-height: 130%;
+//   letter-spacing: vwMobile(2);
+//   text-transform: uppercase;
+//   font-feature-settings: "liga" off;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+
+//   @media (min-width: $desktop) {
+//     font-size: vwDesktop(12);
+//     letter-spacing: vwDesktop(2);
+//   }
+//   @media (orientation: landscape) and (max-width: $desktop) {
+//     font-size: vwDesktop(12);
+//     letter-spacing: vwDesktop(2);
+//   }
+// }
+
+// @mixin filterText {
+//   font-family: GT America;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: vwMobile(14);
+//   line-height: 150%;
+//   margin: 0;
+
+//   @media (min-width: $desktop) {
+//     font-size: vwDesktop(14);
+//   }
+//   @media (orientation: landscape) and (max-width: $desktop) {
+//     font-size: vwDesktop(14);
+//   }
+// }
+
+.h1 {
+  @include h1;
+}
+.h2 {
+  @include h2;
+}
+.h3 {
+  @include h3;
+}
+.h4 {
+  @include h4;
+}

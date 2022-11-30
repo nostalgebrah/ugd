@@ -1,0 +1,16 @@
+{
+    "footer": {
+        "nav" : 
+        [
+            {
+                "link": "home"
+            },
+            {
+                "link": "about"
+            },
+            {
+                "link": "news"
+            }
+        ]
+    }
+}

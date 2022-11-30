@@ -1,0 +1,115 @@
+/*
+ * Base / Variables
+*/
+
+// Colors
+$charcoal: #171717;
+$graphite: #303030;
+$iron: #4A4A4A;
+$snow: #FFFAFA;
+$abalone: #E6E6E6;
+$dove: #CCCCCC;
+$orange1: #FB4F14;
+$orange2: #D14312;
+$orange3: #A4350E;
+$white: $snow;
+
+// old needs to be removed
+$dark-blue: #002b58;
+$mid-blue: #4dcbda;
+$light-blue: #60d1e0;
+$other-blue: #032c56;
+$navigation-blue: #114882;
+
+$grey: #282828;
+$light-grey: #ececec;
+
+// Fonts
+$base-font-family: 'PP Neue Montreal';
+$heading-font-family: 'Fraunces';
+$heading-italic-font-family: 'Fraunces italic';
+
+// Font Sizes 
+$base-font-size: 1rem;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+$spacing-8: 8px;
+$spacing-16: 16px;
+$spacing-24: 24px;
+$spacing-32: 32px;
+$spacing-40: 40px;
+$spacing-56: 56px;
+$spacing-88: 88px;
+$spacing-96: 96px;
+$spacing-136: 136px;
+$spacing-224: 224px;
+$spacing-240: 240px;
+
+
+
+// Breakpoints
+  $small: 799px;
+  $medium: 800px;
+  $large: 1200px;
+
+
+
+// .mobile, .mobile-sm {
+// 	display: none;
+// }
+
+
+
+
+
+.btn.btn-blue {
+	background: $dark-blue;
+	color: $light-blue;
+}
+
+.btn-arrow {
+	background: none !important;
+	i {
+		font-size: 2em;
+		vertical-align: middle;
+	}
+
+	&:hover {
+		color:  $light-blue;
+	}
+}
+
+.btn-to-white-text {
+	&:hover {
+		color: $white !important;
+	}
+}
+
+.btn-to-light-blue {
+
+	color: $dark-blue !important;
+	height: auto !important;
+    font-weight: 700;
+    font-size: 12px !important;
+    padding: 15px 12px !important;
+
+
+	&:hover {
+		background:#7ddae6;
+	}
+}
+
+.btn-to-dark-blue {
+
+	&:hover {
+		background:#345577;
+	}
+}
